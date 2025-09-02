@@ -7,6 +7,7 @@
 ### 设置步骤：
 
 1. **推送代码到 GitHub**
+
    ```bash
    git add .
    git commit -m "feat: 配置 GitHub Pages 部署"
@@ -14,11 +15,19 @@
    ```
 
 2. **启用 GitHub Pages**
+
    - 进入你的 GitHub 仓库
    - 点击 `Settings` 标签
    - 在左侧菜单中找到 `Pages`
    - 在 `Source` 部分选择 `GitHub Actions`
    - 保存设置
+
+   **重要**：确保仓库的 Actions 权限设置正确：
+
+   - 进入 `Settings` > `Actions` > `General`
+   - 在 `Workflow permissions` 部分选择 `Read and write permissions`
+   - 勾选 `Allow GitHub Actions to create and approve pull requests`
+   - 点击 `Save`
 
 3. **等待部署完成**
    - 查看 `Actions` 标签页的部署进度

@@ -78,9 +78,25 @@ pnpm preview
 
 项目已配置 GitHub Actions 自动部署：
 
-1. 推送代码到 `main` 分支
-2. GitHub Actions 自动构建并部署到 GitHub Pages
-3. 访问 `https://你的用户名.github.io/CineVerse/`
+1. **配置仓库权限**：
+
+   - 进入仓库 `Settings` > `Actions` > `General`
+   - 选择 `Read and write permissions`
+   - 勾选 `Allow GitHub Actions to create and approve pull requests`
+
+2. **启用 GitHub Pages**：
+
+   - 进入 `Settings` > `Pages`
+   - 选择 `GitHub Actions` 作为源
+
+3. **推送代码**：
+
+   ```bash
+   git push origin main
+   ```
+
+4. **访问网站**：
+   - 部署完成后访问 `https://你的用户名.github.io/CineVerse/`
 
 详细部署说明请查看 [DEPLOY.md](DEPLOY.md)
 
